@@ -1,6 +1,7 @@
 My first try was to do 2 loops which resulted in O(n).
 Below is my first solution.
-```public class Solution {
+```
+public class Solution {
     public int[] TwoSum(int[] nums, int target) {
         for(int firstNumIndex = 0; firstNumIndex < nums.Length; firstNumIndex++) {
             var firstNum = nums[firstNumIndex];
@@ -14,11 +15,13 @@ Below is my first solution.
 
         return new int[2];
     }
-}```
+}
+```
 
 The better solution is to improve the lookup mechanism by using an IDictionary implementation.
 Below is my second solution.
-```public class Solution {
+```
+public class Solution {
     public int[] TwoSum(int[] nums, int target) {
 
         var complements = new Dictionary<int, int>();
@@ -38,10 +41,12 @@ Below is my second solution.
 
         return new int[2];
     }
-}```
+}
+```
 
 Here is its pseudo code to compare.
-```create empty dictionary called complements
+```
+create empty dictionary called complements
 
 loop through each number in nums (index i)
     let currentNumber = nums[i]
